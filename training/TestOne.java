@@ -9,6 +9,11 @@ public class TestOne {
 	thirdTask(6);
     }
 
+
+    /**
+     * First taskt
+     * @param n Number of lines expected
+     */
     public static void firstTask(int n) {
 	String out = "";
 	String c = "";
@@ -28,6 +33,10 @@ public class TestOne {
 	}
     }
 
+    /**
+     * First taskt
+     * @param n Number of lines expected
+     */
     public static void secondTask(int n) {
 	String out = "";
 	//Loop for lines
@@ -49,6 +58,11 @@ public class TestOne {
 	}
     }
 
+
+    /**
+     * First taskt
+     * @param n Number of lines expected
+     */
     public static  void thirdTask(int n) {
 	String out = "";
 	String c = "";
