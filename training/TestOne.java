@@ -11,7 +11,7 @@ public class TestOne {
 
 
     /**
-     * First taskt
+     * First task
      * @param n Number of lines expected
      */
     public static void firstTask(int n) {
@@ -34,7 +34,7 @@ public class TestOne {
     }
 
     /**
-     * First taskt
+     * Second task
      * @param n Number of lines expected
      */
     public static void secondTask(int n) {
@@ -60,7 +60,7 @@ public class TestOne {
 
 
     /**
-     * First taskt
+     * Third task
      * @param n Number of lines expected
      */
     public static  void thirdTask(int n) {
