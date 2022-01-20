@@ -2,7 +2,7 @@
 ## Software Engineer at **HCL Software**
 =======================================
 
-### Java Training **(January-April 2022)**
+### Java Training **(January-April 2021)**
 
 
-Here are the daily excercise assigned today (January 19) in the training session. 
+Here are the daily excercises assigned today (january 19) in the training session. 
