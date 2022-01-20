@@ -75,7 +75,7 @@ public abstract class Account {
 	}
 	
 	/**
-	 * toString abstract method
+	 * toString method
 	 */
 	public String toString() {
 		String out = "";
@@ -85,5 +85,7 @@ public abstract class Account {
 		return out;
 	}
 	
+	public abstract void doTransactionIn(double in);
+	public abstract void doTransactionOut(double out);
 	
 }

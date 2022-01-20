@@ -54,6 +54,29 @@ public class SavingAccount extends Account {
 	}
 	
 	@Override
+	public void doTransactionIn(double in) {
+		this.amount += in;
+		updateAmount(in);
+		decreaseTransactionsNumber();
+		System.out.println("Operation -deposit- done.");
+	}
+	
+	@Override
+	public void doTransactionOut(double out) {
+		if(amount >= out) {
+			if (amount-out < minimumBalance) {
+				System.out.println("Minimum balance violated. Operation aborted");
+				return;
+			}
+			updateAmount(-1*out);
+			decreaseTransactionsNumber();
+			System.out.println("Operation -withdrall- done.");
+		} else {
+			System.out.println("You don't have sufficient founds.");
+		}
+	} 
+	
+	@Override
 	public String toString() {
 		String out = "";
 		out += "Saving account (with a minimum balance of $"+minimumBalance+")";

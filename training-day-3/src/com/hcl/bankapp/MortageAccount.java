@@ -43,6 +43,22 @@ public class MortageAccount extends Account {
 	}
 
 	@Override
+	public void doTransactionIn(double in) {
+		if(in < monthlyPayment) {
+			System.out.println("Not sufficient funds to pay the montly payment.");
+		} else {
+			this.amount -= in;
+			System.out.println("Monthly payment done");
+		} 
+	}
+	
+	@Override
+	public void doTransactionOut(double out) {
+		updateAmount(25);
+		System.out.println("Due to missing of payment, the new value of this mortage is: $"+this.amount);
+	}  
+	
+	@Override
 	public String toString() {
 		String out = "";
 		out += "Mortage account: ";
